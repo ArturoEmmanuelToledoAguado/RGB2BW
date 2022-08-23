@@ -4,4 +4,5 @@ clear all;
 
 %Extracción de la imagen
 img=imread('Gera.jpg');
-imshow(img)
+[f c]=size(img);
+%imshow(img)
