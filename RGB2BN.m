@@ -29,10 +29,15 @@ img_B(:,:,1)=img(:,:,3);
 img_R=img_R*.299;
 img_G=img_G*.587;
 img_B=img_B*.114;
-%Suma
+%Suma de los valores
 img_BW=img_R+img_G+img_B;
 figure()
-imshow(img_BW)
+imshow(img_BW)%Se muestra la imagen en blanco y negro
+
+%%Uso de la funcion RGB2GRAY
+imgRGB2Gray = rgb2gray(img);
+figure()
+imshow(imgRGB2Gray)
 
 
 % %Extraccion de planos R (Red), G (Green) y B (Blue)
