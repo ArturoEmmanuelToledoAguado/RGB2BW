@@ -4,24 +4,23 @@ clear all;
 
 %Extracción de la imagen
 img=imread('Gera.jpg');
-[f c]=size(img);%Tamaño de la imagen
 
 %Extraccion de planos R (Red), G (Green) y B (Blue) a manita :D
 img_R(:,:,1)=img(:,:,1);
 img_G(:,:,1)=img(:,:,2);
 img_B(:,:,1)=img(:,:,3);
 
-% %Se muestran los planos de la imagen
-% figure()
-% subplot(1,3,1)
-% imshow(img_R)
-% title('Red Channel')
-% subplot(1,3,2)
-% imshow(img_G)
-% title('Green Channel')
-% subplot(1,3,3)
-% imshow(img_B)
-% title('Blue Channel')
+%Se muestran los planos de la imagen
+figure()
+subplot(1,3,1)
+imshow(img_R)
+title('Red Channel')
+subplot(1,3,2)
+imshow(img_G)
+title('Green Channel')
+subplot(1,3,3)
+imshow(img_B)
+title('Blue Channel')
 
 %%Uso de la formula NTSC ( National Television Standards Comitee)
 %%(0.299*R)+(0.587*G)+(0.114*B)
@@ -33,12 +32,25 @@ img_B=img_B*.114;
 img_BW=img_R+img_G+img_B;
 figure()
 imshow(img_BW)%Se muestra la imagen en blanco y negro
+title('Imagen por NTSC')
 
 %%Uso de la funcion RGB2GRAY
 imgRGB2Gray = rgb2gray(img);
 figure()
 imshow(imgRGB2Gray)
+title('Imagen por rgb2gray')
 
+%%Comparación de ambos metodos
+if(img_BW==imgRGB2Gray)
+    s='El resultado es identico';
+    disp(s)
+else
+    s='El resultado es diferente';
+    disp(s)
+end
+figure()
+imshowpair(img_BW,imgRGB2Gray,"montage")
+title('Comparación de imagenes')
 
 % %Extraccion de planos R (Red), G (Green) y B (Blue)
 % [R,G,B] = imsplit(img);
