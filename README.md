@@ -1,5 +1,5 @@
 # Introducción
-Se plantea hacer una matriz del tamaño de la imagen y con los datos anteriores convertir la imagen de color a escala de grises; pro antes de comenzar:
+Se plantea hacer una matriz del tamaño de la imagen y con los datos anteriores convertir la imagen de color a escala de grises; pero antes de comenzar:
 
 ## ¿Qué es el procesamiento digital de imagenes (PDI)?
 PDI se puede definir como el conjunto de procesamientos que se realizan sobre una imagen digital ya sea para realizar su almacenamiento, transmisión o tratamiento.
