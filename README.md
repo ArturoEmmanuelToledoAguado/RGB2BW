@@ -27,15 +27,19 @@ Ahora que conocemos lo basico del procesamiento digital de imágenes es hora de 
 
 ## Lectura de imágenes en matlab
 Para leer una imágen en matlab se utiliza la función <a href="https://la.mathworks.com/help/matlab/ref/imread.html"> **imread**</a> y se asigna a una variable que representara a la imágen
+
 <code>imagen = imread('ruta/nombre de la imágen.extensión');</code>
 
 ## Mostrar una imágen
 La función <a href="https://la.mathworks.com/help/images/ref/imshow.html?searchHighlight=imshow&s_tid=srchtitle_imshow_1">**imshow**</a> permite mostrar una imágen abierta, modificada o creada desde matlab (la imagen se visualiza en una ventana de matlab)
+
 <code>imshow(imagen)</code>
 
 ## Guardar una imágen
 Para guardar el contenido de una imagen la cual ha sido modificada o creada en matlab se utiliza la función <a href="https://la.mathworks.com/help/matlab/ref/imwrite.html?s_tid=doc_ta">**imwrite**</a>
+
 <code>imwrite(variable,'nombre del arvhivo.extención')</code>
+
 En donde 'variable' representa la variable que contiene a la imágen, 'nombre del archivo', el nombre con el que se desea guardar seguido de un punto se indica el tipo de formato deseado
 
 ## Otras formas
