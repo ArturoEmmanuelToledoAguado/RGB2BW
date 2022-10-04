@@ -9,9 +9,8 @@ Una imagen digital a color es una matriz tridimensional, que se compone por tres
 
 ## Convertir una imagen de 8 bits a escala de grises
 Los valores **RGB** se convierten a escala de grises mediante la formula **NISC (National Television Standards Comitee)**
-$$
-Img_{Gray}=0.299*R+0.587*G+0.114*B
-$$
+
+$Img_{Gray}=0.299*R+0.587*G+0.114*B$
 
 ## Formatos de imagenes que soporta Matlab
 |Formato|Extensión|
@@ -46,3 +45,5 @@ En donde 'variable' representa la variable que contiene a la imágen, 'nombre de
 Para obtener los 3 planos (RGB), se puede usar la función: <a href= "https://la.mathworks.com/help/images/ref/imsplit.html?searchHighlight=imsplit&s_tid=srchtitle_imsplit_1">**imsplit**</a>
 
 Mientras que para obtener la imágen en escala de grises tambien se puede hacer uso de la función: <a href="https://la.mathworks.com/help/matlab/ref/rgb2gray.html?s_tid=doc_ta">**rgb2gray**</a>
+
+<a href="https://github.com/ArturoEmmanuelToledoAguado/RGB2BW">Código</a>
